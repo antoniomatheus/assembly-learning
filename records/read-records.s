@@ -47,7 +47,7 @@ record_read_loop:
   pushl ST_INPUT_DESCRIPTOR(%ebp)
   pushl $record_buffer
   call  read_record
-  addl  $8, $esp
+  addl  $8, %esp
 
   #Returns the number of bytes read.
   #If it isn't the same number we
